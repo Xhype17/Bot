@@ -1,0 +1,24 @@
+import random
+
+def simple_bot(user_input):
+    responses = [
+        "Halo! Apa yang bisa saya bantu?",
+        "Terima kasih sudah menghubungi saya.",
+        "Sedang apa hari ini?",
+        "Saya adalah bot sederhana.",
+        "Jika Anda memiliki pertanyaan, tanyakan saja!",
+    ]
+
+    return random.choice(responses)
+
+# Main loop
+while True:
+    user_input = input("Anda: ")
+    
+    if user_input.lower() == 'exit':
+        print("Bot: Sampai jumpa!")
+        break
+    
+    bot_response = simple_bot(user_input)
+    print("Bot:", bot_response)
+    
