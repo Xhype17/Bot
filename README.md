@@ -1,2 +1,2 @@
 # Bot
-Bot heheh
+A bot using python program like a simple chat bot
